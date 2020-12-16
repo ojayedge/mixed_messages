@@ -10,16 +10,16 @@ const messageBank = {
 };
 
 //Store the final display message in an array
-let finalMessage = [];
+const finalMessage = [];
 
 //Generate the components of the final message
-let monthMessageIndex = randomNum(messageBank.month.length);
-const monthMessage = finalMessage.push(`In the month of ${messageBank.month[monthMessageIndex]},`);
+const monthMessageIndex = randomNum(messageBank.month.length);
+finalMessage.push(`In the month of ${messageBank.month[monthMessageIndex]},`);
 
-let activityMessageIndex = randomNum(messageBank.activity.length);
-const activityMessage = finalMessage.push(`you will be ${messageBank.activity[activityMessageIndex].toLowerCase()}`);
+const activityMessageIndex = randomNum(messageBank.activity.length);
+activityMessage = finalMessage.push(`you will be ${messageBank.activity[activityMessageIndex].toLowerCase()}`);
 
-let cityMessageIndex = randomNum(messageBank.city.length);
-const cityMessage = finalMessage.push(`in ${messageBank.city[cityMessageIndex]}.`);
+const cityMessageIndex = randomNum(messageBank.city.length);
+cityMessage = finalMessage.push(`in ${messageBank.city[cityMessageIndex]}.`);
 
 console.log(finalMessage.join(` `));
