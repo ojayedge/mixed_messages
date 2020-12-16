@@ -17,9 +17,9 @@ const monthMessageIndex = randomNum(messageBank.month.length);
 finalMessage.push(`In the month of ${messageBank.month[monthMessageIndex]},`);
 
 const activityMessageIndex = randomNum(messageBank.activity.length);
-activityMessage = finalMessage.push(`you will be ${messageBank.activity[activityMessageIndex].toLowerCase()}`);
+finalMessage.push(`you will be ${messageBank.activity[activityMessageIndex].toLowerCase()}`);
 
 const cityMessageIndex = randomNum(messageBank.city.length);
-cityMessage = finalMessage.push(`in ${messageBank.city[cityMessageIndex]}.`);
+finalMessage.push(`in ${messageBank.city[cityMessageIndex]}.`);
 
 console.log(finalMessage.join(` `));
